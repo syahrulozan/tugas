@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <style type="text/css">
+        body{
+            font-family: monospace;
+            background-color: white;
+            margin :0px;
+            padding: 0px;
+        }
+
+        form{
+            text-align: center;
+        
+        }
+
+        input[type="text"]
+        {
+            margin-right: 530px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            width: 365px;
+            padding: 3px;
+        }
+
+        input[type="email"],
+        input[type="number"]
+        {
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 465px;
+            padding: 3px;
+        }
+
+        input[type="submit"]
+        {
+            background-color: rgb(20, 20, 208);
+            margin-bottom: 10px;
+            padding: 3px;
+        }
+
+        input[type="password"]
+        {
+            width: 463px;
+            border-radius: 5px;
+            padding: 3px;
+        }
+        select{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 470px;
+            padding: 3px;
+        }
+       
+        img{
+            width: 80px;
+            float: left;
+            margin-left: 35%;
+            margin-right: 0px;
+        }
+        
+        input[type="submit"]
+        {
+            width: 473px;
+            margin-top: 15px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        input[type="submit"]:hover{
+            background-color: lightskyblue;
+        }
+
+        h2{
+            text-align: center;    
+        }
+
+        .atas img {
+        }
+
+        .atas{
+            display: flex;
+        }
+
+       .name{
+            margin: 5px;
+        }
+        .error{
+            color: red;
+        }
+
+        
+
+    </style>
+   
+</head>
+<body>
+    <h2>Create New User</h2>
+    <div>
+        <form action="", id="form-group">
+            <div class="atas"> 
+                <img src="https://www.rancahpost.com/wp-content/uploads/2022/01/Cara-Mengunci-Foto-Profil-FB.png" alt="">
+                <div class="name">
+                    <input type="text"  id="firstname" placeholder="First Name">
+                    <p id="firstname-error" class="error"></p>
+                    <input type="text"  id="Lastname" placeholder="Last Name">
+                    <p id="Lastname-error" class="error"></p>
+                </div>
+            </div>
+            <div>
+               
+                <select name="worktype" id="worktype">
+                    <option value="">-- Select WorkType--</option>
+                    <option value="">Programmer</option>
+                    <option value="">Pengusaha</option>
+                    <option value="">gamer</option>
+                    <option value="">Yanto</option>
+                </select>
+                <p id="worktype-error" class="error"></p>
+            </div>
+            <div>
+                <input type="number"  id="phoneNumber" placeholder="Phone Number">
+                <p id="phoneNumber-error" class="error"></p>
+            </div>
+            <div>
+                <input type="email"  id="email" placeholder="Email">
+                <p id="email-error" class="error"></p>
+            </div>
+            <div>
+                <input type="password"  id="password" placeholder="Password">
+                <p id="password-error" class="error"></p>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
